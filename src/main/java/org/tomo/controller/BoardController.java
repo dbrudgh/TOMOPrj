@@ -23,7 +23,7 @@ public class BoardController {
 	
 	  @RequestMapping(value = "/list", method = RequestMethod.GET)
 	  public void listAll(Model model, BoardVO vo) throws Exception {
-
+		  System.out.println("유경호 테스트");
 	   
 	    model.addAttribute("list", service.boardAllList(vo));
 	  }
